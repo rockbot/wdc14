@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+
+    h2= title
+    canvas(id="canvas", width="500", height="300")
+
+    if (scriptNum > 1)
+      .slider.slider-1
+        h3 Joint 1:
+          span.slider1-val 90
+          | &nbsp;&deg;
+        input#slider1(type='range', value='90', min='10', max='170')
+      .slider.slider-2
+        h3 Joint 2:
+          span.slider2-val 0
+          | &nbsp;&deg;
+        input#slider2(type='range', value='0', min='-80', max='80')
+
+    if (typeof nextPage !== 'undefined')
+      .button
+        a(href='#{nextPage}') Next Demo
+
+    if (scriptNum > 1)
+      script(src="/js/ender.min.js")
+      script(src="/js/vektor.js")
+
+    script(src="/js/canvas#{scriptNum || ''}.js")

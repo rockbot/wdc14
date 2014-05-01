@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  border: 2px dotted #00B7FF;
+  padding: 1em;
+  position: absolute;
+  text-decoration: none;
+  left: 30em;
+  top: 33em;
+}
+
+.slider1-val, .slider2-val {
+  padding-left: 5px;
+}
+
+canvas {
+  outline: 1px solid black;
+}
