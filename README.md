@@ -12,7 +12,7 @@ npm install
 npm start
 ```
 
-Code is located at http://localhost:3000.
+Play with the demo code in a browser at http://localhost:3000.
 
 For the code that runs Manny the Manipulator, check out the [Manny the Manipulator repo](https://github.com/rockbot/manny).
 
